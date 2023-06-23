@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WEB tutorial05</title>
+    </head>
+    <body>
+        <script>
+            function x(red){
+                document.body.style.backgroundColor= 'red';
+            }
+            function y(blue){
+                document.body.style.backgroundColor = 'blue';
+            }
+            function z(green){
+                document.body.style.backgroundColor = 'green';
+            }
+            function w(white){
+                document.body.style.backgroundColor = 'white';
+            }
+        </script>
+        <button id="r" onmouseover="x('red')" onmouseout="w('white')">RED</button>
+        <button id="b" onmouseover="y('blue')" onmouseout="w('white')">BLUE</button>
+        <button id="g" onmouseover="z('green')" onmouseout="w('white')">GREEN</button>
+    </body>
+</html>
