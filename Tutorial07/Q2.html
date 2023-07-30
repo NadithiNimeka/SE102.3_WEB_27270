@@ -1,0 +1,35 @@
+<DOCTYPE!.html>
+<html>
+<head>
+	<title>Web tutorial 6</title>
+    <script>
+        var avg = 0; 
+
+        window.onload = function(){
+            var total = 0;
+            
+            for (var i = 1; i <= 5; i++){
+                var mark = window.prompt(`Enter your marks ${i}`, "Marks");
+                total += parseInt(mark);
+            }
+
+            avg = total / 5; 
+
+            var result = document.createElement("div");
+            resultDiv.innerHTML = "Total: " + total + "<br> Average: " + avg;
+            document.body.appendChild(result);
+        }
+
+        function Grade(){
+            if (avg > 30) {
+                alert("Congratulations, you are passed!");
+            } else {
+                alert("Try better next time.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Grade" onclick="Grade()">
+</body>
+</html>
