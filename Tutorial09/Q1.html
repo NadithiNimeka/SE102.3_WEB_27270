@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>tute 09</title>
+    <script>
+        function num(day){
+            daynme = "";
+            if(day==1){
+                daynme="Monday";
+            }
+            if(day==2){
+                daynme="Tuesday";
+            }
+            if(day==3){
+                daynme="Wednesday";
+            }
+            if(day==4){
+                daynme="Thursday";
+            }
+            if(day==5){
+                daynme="Friday";
+            }
+            if(day==6){
+                daynme="Saturday";
+            }
+            if(day==7){
+                daynme="Sunday";
+            }
+            document.write("Day acording to your number: "+daynme);
+            
+        }
+    </script>
+</head>
+<body>
+    <script>
+        daynum = prompt("Enter a number between 1-7");
+        num(daynum);
+    </script>
+
+</body>
+</html>
